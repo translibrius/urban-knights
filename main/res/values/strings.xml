@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Urban Knights</string>
+    <string name="maps_api_key">AIzaSyCNd0dJF6BYBB1fx_9EJ9mVdZkVoD5z0dc</string>
+    <string name="app_version">v1.2.0</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="ip">http://78.56.223.187/urbanknights/</string> <!--http://urbanknights.eu/scripts/--> <!--http://78.56.223.187/urbanknights/-->
+
+    <string name="sectorClickTitle">Duomenys apie teritoriją</string>
+    <string name="mapsBtnUpgrade">Sustiprinti</string>
+    <string name="mapsBtnCapture">Užimti</string>
+    <string name="mapsBtnProfile">Profilis</string>
+    <string name="mapsBtnStatistics">Statistika</string>
+    <string name="mapsBtnAchievements">Pasiekimai</string>
+    <string name="upgradeTitle">Sustiprinimas</string>
+    <string name="statisticsTitle">Statistika</string>
+    <string name="achievementsTitle">Pasiekimai</string>
+    <string name="statisticsHeader1">Teritorijos</string>
+    <string name="statisticsHeader2">Auksas</string>
+
+</resources>

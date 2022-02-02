@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MapsActivity">
+
+    <RelativeLayout android:id="@+id/linearUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3">
+
+        <!-- 1.1.0 height cahnged to wrap_content was 30dp on all 3 txtviews -->
+        <!-- 1.1.0 height cahnged to wrap_content was 30dp on all 3 txtviews -->
+        <TextView android:id="@+id/txUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold"></TextView>
+
+        <TextView android:id="@+id/txTeritorijos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_10ssp"
+            android:text="Teritorijos: "
+            android:layout_toRightOf="@+id/txUsername"
+            >
+        </TextView>
+
+        <TextView android:id="@+id/txAuksas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_10ssp"
+            android:text="Auksas: "
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_toRightOf="@+id/txTeritorijos"
+            >
+        </TextView>
+    </RelativeLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+        android:layout_below="@+id/linearUserInfo" />
+
+    <!-- 1.2.0 added -->
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginBottom="5dp"
+        android:enabled="false"
+        android:background="#D3D3D3"
+        android:layout_above="@+id/rlButtons"
+        android:text="@string/mapsBtnCapture" />
+`
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnCapture"
+        android:layout_centerHorizontal="true"
+        android:enabled="true"
+        android:background="#D3D3D3"
+        android:text="@string/mapsBtnProfile" />
+
+    <RelativeLayout android:id="@+id/rlButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp">
+
+        <!-- 1.1.0 width wrap_content was 90dp on all 3 buttons -->
+        <Button
+            android:id="@+id/btnUpgrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="#D3D3D3"
+
+            android:enabled="false"
+            android:text="@string/mapsBtnUpgrade" />
+
+        <Button
+            android:id="@+id/btnStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:background="#D3D3D3"
+            android:text="@string/mapsBtnStatistics" />
+
+        <Button
+            android:id="@+id/btnAchievements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:background="#D3D3D3"
+            android:text="@string/mapsBtnAchievements" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

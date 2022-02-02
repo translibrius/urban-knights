@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatisticsActivity">
+
+    <TextView android:id="@+id/titleStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/statisticsTitle"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/simpleTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleStats"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="30dp"
+        android:stretchColumns="1"> <!-- stretch the second column of the layout-->
+
+        <!-- first row of the table layout-->
+        <TableRow
+            android:id="@+id/titleRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row 1.2.0 added loading text-->
+            <TextView
+                android:id="@+id/txStatsHeader1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paruošiama informacija..."
+                android:textStyle="bold"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/txStatsTer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingRight="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txStatsTerValue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/txStatsTer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingRight="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txStatsTerValue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/txStatsTer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingRight="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txStatsTerValue3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/txStatsTer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingRight="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txStatsTerValue4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row5"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/txStatsTer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingRight="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txStatsTerValue5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone" />
+
+        </TableRow>
+
+
+
+
+
+
+        <TableRow
+            android:id="@+id/titleRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/txStatsHeader2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auksas"
+                android:visibility="invisible"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row6"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/txStatsAuks1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txStatsAuksValue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+            />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row7"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/txStatsAuks2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txStatsAuksValue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row8"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/txStatsAuks3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txStatsAuksValue3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row9"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/txStatsAuks4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txStatsAuksValue4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row10"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+                android:id="@+id/txStatsAuks5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txStatsAuksValue5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Išeiti"/>
+
+</RelativeLayout>

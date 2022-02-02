@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SectorClickActivity">
+
+    <TextView android:id="@+id/sectorClickTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="@string/sectorClickTitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sectorClickId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectorClickTitle"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Id:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sectorClickOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectorClickId"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Savininkas:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sectorClickLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectorClickOwner"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Lygis:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sectorClickPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectorClickLevel"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Riteriai:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sectorClickProtection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectorClickPlayers"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Apsauga iki:"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/sectorClickWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectorClickProtection"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Auksas / val.:"
+        android:textStyle="bold" />
+
+    <!--Dragons 1.2.0-->
+    <TextView
+        android:id="@+id/sectorClickDragon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sectorClickWeight"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Drakonas:"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView android:id="@+id/sectorClickIdInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sectorClickWeight"
+        android:layout_alignTop="@+id/sectorClickId"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView android:id="@+id/sectorClickOwnerInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sectorClickWeight"
+        android:layout_alignTop="@+id/sectorClickOwner"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView android:id="@+id/sectorClickLevelInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sectorClickWeight"
+        android:layout_alignTop="@+id/sectorClickLevel"
+        android:layout_marginStart="30dp"
+        />
+
+
+    <TextView android:id="@+id/sectorClickPlayersInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sectorClickWeight"
+        android:layout_alignTop="@+id/sectorClickPlayers"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView android:id="@+id/sectorClickProtectionInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sectorClickWeight"
+        android:layout_alignTop="@+id/sectorClickProtection"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView android:id="@+id/sectorClickWeightInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sectorClickWeight"
+        android:layout_alignTop="@+id/sectorClickWeight"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView android:id="@+id/sectorClickDragonInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sectorClickWeight"
+        android:layout_alignTop="@+id/sectorClickDragon"
+        android:layout_marginStart="30dp"
+        />
+
+    <Button android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Išeiti"/>
+
+</RelativeLayout>

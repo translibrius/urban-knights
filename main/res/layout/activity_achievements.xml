@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AchievementsActivity">
+
+    <TextView android:id="@+id/achievementsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="@string/achievementsTitle"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout android:id="@+id/viewGuideLine"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/achievementsTitle"
+        android:orientation="horizontal" />
+
+    <TextView android:id="@+id/txVieta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/rlUsers"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textStyle="italic"
+        android:layout_alignBottom="@+id/viewGuideLine"
+        android:text="Paruošiama informacija..."/> <!-- //1.2.0 Taškus rodom tik kai užloadina info, kai not loaded - ,,Paruošiama informacija..." -->
+
+    <TextView
+        android:id="@+id/txVieta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewGuideLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_toRightOf="@+id/txVieta1"
+        android:text=""
+        android:textStyle="italic" />
+
+    <TextView android:id="@+id/txVieta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:layout_marginStart="30dp"
+        android:layout_toRightOf="@+id/txVieta2"
+        android:layout_alignBottom="@+id/viewGuideLine"
+        android:text=""/>
+
+    <RelativeLayout android:id="@+id/rlUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/viewGuideLine">
+
+        <TextView
+            android:id="@+id/txAchievementsUser1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txAchievementsUser2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txAchievementsUser1" />
+
+        <TextView
+            android:id="@+id/txAchievementsUser3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txAchievementsUser2" />
+
+        <TextView
+            android:id="@+id/txAchievementsUser4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txAchievementsUser3" />
+
+        <TextView
+            android:id="@+id/txAchievementsUser5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txAchievementsUser4" />
+
+        <TextView
+            android:id="@+id/txAchievementsUser6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txAchievementsUser5" />
+
+        <TextView
+            android:id="@+id/txAchievementsUser7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txAchievementsUser6" />
+
+        <TextView
+            android:id="@+id/txAchievementsUser8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txAchievementsUser7" />
+
+        <TextView
+            android:id="@+id/txAchievementsUser9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txAchievementsUser8" />
+
+        <TextView
+            android:id="@+id/txAchievementsUser10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txAchievementsUser9" />
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/rlAchievementsVietos1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/achievementsTitle"
+        android:layout_alignStart="@+id/txVieta1"
+        android:layout_alignEnd="@+id/txVieta1"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/txEil1Viet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil2Viet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil1Viet1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil3Viet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil2Viet1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil4Viet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil3Viet1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil5Viet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil4Viet1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil6Viet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil5Viet1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil7Viet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil6Viet1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil8Viet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil7Viet1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil9Viet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil8Viet1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil10Viet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil9Viet1"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/rlAchievementsVietos2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/rlAchievementsVietos1"
+        android:layout_below="@+id/achievementsTitle"
+        android:layout_alignStart="@id/txVieta2"
+        android:layout_alignEnd="@id/txVieta2"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/txEil1Viet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil2Viet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil1Viet2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil3Viet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil2Viet2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil4Viet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil3Viet2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil5Viet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil4Viet2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil6Viet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil5Viet2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil7Viet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil6Viet2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil8Viet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil7Viet2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil9Viet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil8Viet2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil10Viet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil9Viet2"
+            android:layout_centerHorizontal="true" />
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/rlAchievementsVietos3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/rlAchievementsVietos1"
+        android:layout_below="@+id/achievementsTitle"
+        android:layout_alignStart="@id/txVieta3"
+        android:layout_alignEnd="@id/txVieta3"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/txEil1Viet3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil2Viet3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil1Viet3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil3Viet3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil2Viet3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil4Viet3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil3Viet3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil5Viet3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil4Viet3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil6Viet3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil5Viet3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil7Viet3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil6Viet3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil8Viet3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil7Viet3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil9Viet3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil8Viet3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txEil10Viet3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txEil9Viet3"
+            android:layout_centerHorizontal="true" />
+        />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txPointExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:textColor="@color/ic_launcher_background"
+        android:layout_toRightOf="@+id/txVieta1"
+        android:layout_alignTop="@+id/txVieta1"
+        android:layout_marginStart="30dp"
+        android:visibility="invisible"
+        android:text="1 vieta: 3 taškai. \n 2 vieta: 2 taškai. \n 3 vieta: 1 taškas." />
+
+    <Button android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Išeiti"/>
+
+</RelativeLayout>

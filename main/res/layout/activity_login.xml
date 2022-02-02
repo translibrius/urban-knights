@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!--1.1.0 Scalable margin start-->
+    <TextView android:id="@+id/txVart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_alignTop="@+id/etUsername"
+        android:layout_marginEnd="30dp"
+        android:text="Vartotojas:"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txVart"
+        android:layout_alignTop="@+id/etPassword"
+        android:layout_marginEnd="30dp"
+        android:text="Slaptažodis:"/>
+
+    <TextView android:id="@+id/txRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_alignStart="@+id/txVart"
+        android:layout_marginTop="17dp"
+        android:text="Atsiminti:"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/etPassword"
+        android:layout_alignTop="@+id/txRemember"
+        android:layout_marginLeft="-7dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginRight="-5dp"
+        android:imeOptions="actionNext"/>
+
+    <!--1.1.0 Width pakeistas i match_parent ant edittexts (buvo 250dp) and added scalable margin end for etUsername-->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txVart"
+        android:background="@drawable/et_border"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:imeOptions="actionNext"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsername"
+        android:layout_alignStart="@+id/etUsername"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:background="@drawable/et_border"
+        android:inputType="textPassword"
+        android:padding="2dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox"
+        android:text="Prisijungti"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/et_border"
+        android:layout_centerVertical="true"
+        android:onClick="OnLogin"/>
+
+
+
+</RelativeLayout>
